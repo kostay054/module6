@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<!-- <html lang="ru"> -->
+<html>   
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>lesson22</title>
+
+    <!-- less доступин только на хостинге -->
+    <!-- <script src="js/less.min.js"></script> -->
+    <link href="css/style.less" rel="stylesheet">
+    <!-- end less чотинг -->
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link  href="fotorama/fotorama.css" rel="stylesheet"> -->  <!-- // Fotorama -->
+    <link  href="slick/slick.css" rel="stylesheet">  
+    <link  href="slick/slick-theme.css" rel="stylesheet">  
+    <link  href="css/animate.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet">
+    
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="main">
+        <!-- видео -->
+      <div class="video-container">
+        <div class="filter"></div>
+          <video autoplay loop class="fillWidth">
+              <source src="video-bg/MP4/web-video.mp4" type="video/mp4"/>Ваш браузер не поддерживает видео. Мы рекомендуем вам обновить Ваш браузер.
+              <source src="video-bg/WEBM/web-video.webm" type="video/webm"/>Ваш браузер не поддерживает видео. Мы рекомендуем вам обновить Ваш браузер.
+          </video>
+          <div class="poster hidden">
+              <img src="video-bg/Snapshots/web-video.jpg" alt="">
+          </div>
+      </div>
+        <!-- end видео -->
+      
+          <div class="container">
+            <div class="row main-head">
+
+                <div class="col-xs-6 main-logo">
+                  <div class="main-logo-border">
+                    <p><span>S</span>mart</p>
+                  </div>
+                </div>
+
+              <div class="col-xs-6 main-nav">
+                <a class="main-nav-bar" href="#">
+                <span class="line"></span>
+               </a>
+              </div>
+
+            </div>
+            <div class="row main-text">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h1><span class="sm-sm">Smart</span> Agency Landign Page</h1>
+                    <p>
+                    Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вскоре свой своих силуэт наш, моей, курсивных последний ее она, оксмокс вопроса то страну гор ты? Lorem не, ручеек что жизни 
+                    </p>
+              </div>
+            </div>
+            <div class="row col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+              <div class="main-form">
+                 <p class="main-form-header">
+                 <span>Send</span> A Message
+                 </p>
+                <form id="main-form" action="#">
+                  <input id="userName" type="text" placeholder="Your Name">
+                  <input type="tel" id="phone" placeholder="phone">
+                  <textarea rows="3" placeholder="Your Message"></textarea>
+                  <button id="submit-form" class="main-form-btn" type="submit"> Sand Massage <span>&rarr;</span></button>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+    </header>
+ 
+     <!-- process -->
+    <section id="process">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 section-header text-center wow flipInX"
+            data-wow-offset="200">
+            <h2><span>Working</span> Process</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eaque consequuntur provident nesciunt, dolorum!
+            </p>
+          </div>
+        </div> <!-- /row -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeftBig">
+            <div class="process-box box-tomi">
+              <i class="fa fa-magnet"></i>
+              <h4>Koc Koi Tomi</h4>
+              <p>
+              Lorem ipsum is dummy lorem very dumy
+              </p>
+              <button data-toggle="modal" data-target="#model-2" class="process-btn"> <span class="btn-plus"></span>Окно bootstrap</button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInLeft">
+            <div class="process-box box-koimona">
+                <i class="fa fa-bug"></i>
+                <h4>Koimona Set</h4>
+                <p>
+                Lorem ipsum is dummy you   lorem very dumyL is 
+                </p>
+                <button class="process-btn"><span class="btn-plus"></span><a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger">модное окно</a></button>
+                 <!--  <button class="process-btn" id="modal-trigger data-type="cd-modal-trigger"">  <span class="btn-plus"></span>модное окно</button> -->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRight">
+            <div class="process-box box-koire">
+                <i class="fa fa-gears"></i>
+                <h4>Setting Koire</h4>
+                <p>
+                Lorem ipsum is dummy lorem very yLorem ipsus 
+                </p>
+                <button class="process-btn"><span class="btn-plus"></span>Know More</button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInRightBig">
+            <div class="process-box box-lara">
+                <i class="fa  fa-camera-retro"></i>
+                <h4>Ko Image Lara</h4>
+                <p>
+                Lorem ipsum is dummy ry dumyLorem ipsum is 
+                </p>
+                <button class="process-btn"><span class="btn-plus"></span>Know More</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /container -->
+    </section>
+       <!-- parallax scrol 1 -->
+       <section class="parallax-window" data-parallax="scroll" data-image-src="img/scrol/scrol1.jpg" id="scrol1">
+       
+
+       </section>
+       <!-- end parallax scrol 1 -->
+    <!-- Works -->
+    <section id="works">
+      <div class="container">
+        <div class="row  section-header text-center wow flipInX" data-wow-offset="200">
+          <h2><span>Featured </span>Works</h2>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+          </p>
+        </div>    <!-- /row -->
+        <div class="row works-row">
+          <div class=" col-md-4 col-sm-4  wow fadeInLeftBig">
+          <div class="works-box">
+            <img src="img/works/W1.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 1
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>  
+          </div>
+          <div class="col-md-4 col-sm-4  wow flipInX">
+                <div class="works-box">
+            <img src="img/works/w2.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 2
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+          <div class="col-md-4 col-sm-4  wow fadeInRightBig">
+                <div class="works-box">
+            <img src="img/works/w3.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 3
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+        </div> <!-- /row --> 
+        <div class="row works-row">
+          <div class="col-md-4 col-sm-4  wow fadeInLeftBig">
+          <div class="works-box">
+            <img src="img/works/w4.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 4
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>  
+          </div>
+          <div class="col-md-4 col-sm-4  wow flipInX">
+                <div class="works-box">
+            <img src="img/works/w5.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 5
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+          <div class="col-md-4 col-sm-4  wow fadeInRightBig">
+                <div class="works-box">
+            <img src="img/works/w6.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 6
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+        </div> <!-- /row --> 
+        <div class="row works-row">
+          <div class="col-md-4 col-sm-4  wow fadeInLeftBig">
+          <div class="works-box">
+            <img src="img/works/w7.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 7
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>  
+          </div>
+          <div class="col-md-4 col-sm-4  wow flipInX">
+                <div class="works-box">
+            <img src="img/works/w8.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 8
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+          <div class="col-md-4 col-sm-4  wow fadeInRightBig">
+                <div class="works-box">
+            <img src="img/works/w9.jpg" alt="описание">
+            <div class="signature">
+             <div class="sign"> 
+             <p>
+               Work № 9
+              </p>
+              <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+        </div> <!-- /row --> 
+      </div> <!-- /container -->
+    </section>
+
+      <!-- parallax scrol 1 -->
+       <section class="parallax-window" data-parallax="scroll" data-image-src="img/scrol/scrol2.jpg" id="scrol2"></section>
+       <!-- end parallax scrol 1 -->
+   <!-- services -->
+    <section id="services">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-12 section-header text-center">
+             <h2><span>Services</span> Wi Provide</h2>
+             <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные.</p>
+           </div>
+         </div> <!-- /row -->
+         <div class="row">
+           <div class="col-lg-2">
+             <ul role="tablist" class="services-list">
+               <li role="presentation" class="services-list-item"><a href="#add"  aria-controls="add" role="tab" data-toggle="tab" ><img src="img/services/1.png" alt="1"></a></li>
+               <li role="presentation" class="services-list-item"><a href="#web" aria-controls="web" role="tab" data-toggle="tab" "><img src="img/services/2.png" alt="2"></a></li>
+               <li role="presentation" class="services-list-item"><a href="#global"  aria-controls="global" role="tab" data-toggle="tab" ><img src="img/services/3.png" alt="3"></a></li>
+              
+             </ul>
+           </div>
+         <div class="col-lg-10">
+           <div class="services-info  tab-content">
+           <!-- 1 -->
+             <diw id="add" role="tabpanel" class="row tab-pane fade in active">
+                <div class="col-lg-8">
+                    <h4>
+                      Modern App Design
+                       </h4>
+                           <span class="services-line"></span>
+                           <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, <br>aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br>
+            
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                           </p>
+                           <button class="services-btn"><span class="btn-plus"></span> 
+                           Know More</button>
+                       </div>  <!-- /col-lg-8 -->
+                       <div class="col-lg-4 media-img">  <!-- картинка -->
+                         <img class="img-responsive" src="img/services/info-1.png" alt="часы">
+                       </div>
+                   </diw> <!-- /row/ -->
+                   <!-- 2 -->
+                     <diw id="web" role="tabpanel" class="row tab-pane fade">
+                <div class="col-lg-8">
+                    <h4>
+                      Modern Web Design
+                       </h4>
+                           <span class="services-line"></span>
+                           <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, <br>aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br>
+            
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                           </p>
+                           <button class="services-btn"><span class="btn-plus"></span> 
+                           Know More</button>
+                       </div>  <!-- /col-lg-8 -->
+                       <div class="col-lg-4 media-img">  <!-- картинка -->
+                         <img class="img-responsive" src="img/services/info-2.png" alt="часы">
+                       </div>
+                   </diw> <!-- /row/ -->
+                   <!-- 3 -->
+                     <diw id="global" role="tabpanel" class="row tab-pane fade">
+                <div class="col-lg-8">
+                    <h4>
+                      Modern Global Design
+                       </h4>
+                           <span class="services-line"></span>
+                           <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, <br>aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br>
+            
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
+                           </p>
+                           <button class="services-btn"><span class="btn-plus"></span> 
+                           Know More</button>
+                       </div>  <!-- /col-lg-8 -->
+                       <div class="col-lg-4 media-img">  <!-- картинка -->
+                         <img class="img-responsive" src="img/services/info-3.png" alt="часы">
+                       </div>
+                   </diw> <!-- /row/ -->
+  
+                   <!-- end 1-2-3 -->
+              </div>
+           </div>     
+         </div> <!-- /row -->
+         </div> <!-- /container -->
+
+         <!-- Parallax pictures -->
+
+       </section>
+            <section id="parallax">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 section-header text-center">
+                    <h2><span>Each 100 mu </span> client gifts</h2>
+                    <p>
+                    Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Сих напоивший которое толку приставка!
+                    </p>
+                  </div>
+                </div> <!-- /row -->
+                <div class="row">
+                  <div class="col-xs-12">
+                     <div id="scene">
+                      <div class="layer" id="layer-1" data-depth="0.80"><img src="img/gifts/gifts1.png"></div>
+                      <div class="layer" id="layer-2" data-depth="0.70"><img src="img/gifts/gifts2.png"></div>
+                      <div class="layer" id="layer-3" data-depth="0.50"><img src="img/gifts/gifts3.png"></div>
+            
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- /container -->
+            </section>
+
+          <!-- end Paralax pictures -->
+
+
+          <!-- акардион  Fraquently -->
+       <section id="FAQ">
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-12 section-header text-center">
+               <h2><span>Fraquently</span> Asked Questions</h2>
+               <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+             </div>
+             <div class="row ">
+               <div class="col-lg-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    </div>  <!-- акардион -->  
+               </div> <!-- /col-lg-12 -->
+             </div> <!-- /row/ -->
+           </div> <!-- /row -->
+         </div> <!-- /container -->
+       </section>
+       
+       <!-- // Fotorama -->
+
+     <!--   <section>
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-12">
+
+               <div class="fotorama"
+               data-width="100%"
+               data-loop="true"
+               >
+                <img src="http://s.fotorama.io/1.jpg">
+                <img src="http://s.fotorama.io/2.jpg">
+                 <img src="http://s.fotorama.io/1.jpg">
+                <img src="http://s.fotorama.io/2.jpg">
+                </div>
+             </div> -->
+           <!-- </div> --> <!-- /row -->
+        <!--  </div>  --><!-- /container -->
+       <!-- </section> -->
+
+       <!-- end Fotorama -->
+
+       <!-- http://kenwheeler.github.io/slick/  -->
+          
+          <section id="feedback">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 section-header text-center">
+                  <h2><span>Сlients</span> Said</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at dolore facilis!  
+                  </p>   
+                </div>  <!-- / section-header  -->
+              </div> <!-- /row -->
+              <div class="row">
+                    <div class="col-lg-12">
+                      <div class="feedback-slider">
+                              <div class="feedback-slider-item text-center">
+                                <div class="feedback-box">
+                                  <img class="img-circle center-block feedback-img"  src="img/feedback/f1.jpg" alt="Maick">
+                                  <div class="feedback-shadow">
+                                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах реторический, продолжил даль использовало.
+                                  </p>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <p><span>Kita Say,</span> HK Director</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="feedback-slider-item text-center">
+                                          <div class="feedback-box">
+                                  <img class="img-circle center-block feedback-img " src="img/feedback/f2.jpg" alt="Maick">
+                                  <div class="feedback-shadow">
+                                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах реторический, продолжил даль использовало.
+                                  </p>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <p><span>Kita Say,</span> HK Director</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="feedback-slider-item text-center">
+                                          <div class="feedback-box">
+                                  <img class="img-circle center-block feedback-img" src="img/feedback/f1.jpg" alt="Maick">
+                                  <div class="feedback-shadow">
+                                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах реторический, продолжил даль использовало.
+                                  </p>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <p><span>Kita Say,</span> HK Director</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="feedback-slider-item text-center">
+                                          <div class="feedback-box">
+                                  <img class="img-circle center-block feedback-img" src="img/feedback/f2.jpg" alt="Maick">
+                                  <div class="feedback-shadow">
+                                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах реторический, продолжил даль использовало.
+                                  </p>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <p><span>Kita Say,</span> HK Director</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="feedback-slider-item text-center">
+                                          <div class="feedback-box">
+                                  <img class="img-circle center-block feedback-img" src="img/feedback/f1.jpg" alt="Maick">
+                                  <div class="feedback-shadow">
+                                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах реторический, продолжил даль использовало.
+                                  </p>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <p><span>Kita Say,</span> HK Director</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="feedback-slider-item text-center">
+                                          <div class="feedback-box">
+                                  <img class="img-circle center-block feedback-img" src="img/feedback/f2.jpg" alt="Maick">
+                                 <div class="feedback-shadow">
+                                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах реторический, продолжил даль использовало.
+                                  </p>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <p><span>Kita Say,</span> HK Director</p>
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                    </div>   <!-- /col-lg-12 -->
+                  </div> <!-- /row/ --> 
+            </div> <!-- /container -->
+          </section>
+          
+
+       <!-- end http://kenwheeler.github.io/slick/  -->
+
+       <!-- footer -->
+       <footer id="footer">
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-12 text-center">
+              <button data-toggle="modal" data-target="#model-1" class="footer-btn">Окно bootstrap</button>
+              
+              <!-- data-toggle="modal" говорит что будет всплывающее окно -->
+              <!-- data-target="model1" какое всплывающее окно  -->
+             <!--  <a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger">модное окно</a>  --><!-- от модного окна -->
+             </div>
+           </div>
+         </div>
+       </footer>
+       <!-- end footer -->
+    
+
+        <!-- models -->
+        <!-- <a href="#popup-1">всплывающее окно</a> -->
+        <!-- всплывающее окно без javascript -->
+       <!--  <div id="popup-1" class="popup-overlay">
+          <div class="popup">
+            <a class="popup-close" href="#close">&times;</a>
+          </div>
+        </div> -->
+        <!-- /.popup-overlay -->
+<!-- bootstrap Modal-1 -->
+
+<!-- Modal -->
+<!-- modal-1  -->
+<div class="modal fade" id="model-1" tabindex="-1" data-backdrop="false" role="dialog" aria-labelledby="myModalLabel">
+    <!-- data-bakdrop="false" клиент при клике на любое место экрана не закроет окно -->
+    <!-- data-keybord="true" будет при нажатии на esc не довать закрыть окно иначе будет-->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Заголовок названия окна № 1</h4>
+          </div>
+          <div class="modal-body">
+            содержимое всплывающего окна 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- end modal-1  -->
+<!-- modal-2  -->
+<div class="modal fade" id="model-2" tabindex="-1" data-backdrop="false" role="dialog" aria-labelledby="myModalLabel">
+    <!-- data-bakdrop="false" клиент при клике на любое место экрана не закроет окно -->
+    <!-- data-keybord="true" будет при нажатии на esc не довать закрыть окно иначе будет-->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Заголовок названия окна  №2</h4>
+          </div>
+          <div class="modal-body">
+            содержимое всплывающего окна 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- end modal-2  -->
+<!-- modal-3  -->
+<div class="modal fade" id="modal-3" tabindex="-1" data-backdrop="false" role="dialog" aria-labelledby="myModalLabel">
+    <!-- data-bakdrop="false" клиент при клике на любое место экрана не закроет окно -->
+    <!-- data-keybord="true" будет при нажатии на esc не довать закрыть окно иначе будет-->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">спасибо <span id=nameUser></span></h4>
+          </div>
+          <div class="modal-body">
+            ваша форма отправлена
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- end modal-3  -->
+<!-- end bootstrap Modal -->
+    
+     <!-- всплывающее окно svg -->
+  <div class="cd-modal" data-modal="modal-trigger">
+        <div class="cd-svg-bg" 
+        data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+        data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+        data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+        data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+        data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+        data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+          <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+            <title>SVG Modal background</title>
+            <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+            <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+            <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+          </svg>
+        </div>
+
+        <div class="cd-modal-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+          </p>
+        </div> <!-- cd-modal-content -->
+
+        <a href="#0" class="modal-close">Close</a>
+    </div> <!-- cd-modal -->
+
+  <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+
+     <!-- end всплывающее окно svg -->
+<!-- menu -->
+<div class="overlay-nav">
+  <span class="close-nav">&times;</span>
+  <ul>
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Портфолио</a></li>
+    <li><a href="#">Цены</a></li>
+    <li><a href="#">Карта</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</div>
+
+<!-- end menu -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!--  <script src="fotorama/fotorama.js"></script>  --> <!-- // Fotorama -->
+    <script src="slick/slick.min.js"></script>  
+    <script src="slick/ajax-loader.gif"></script>  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>  <!-- от модного окна -->
+    <script src="js/snap.svg-min.js"></script>  <!-- от модного окна -->
+    <script src="js/wow.min.js"></script>  <!-- от модного окна -->
+    <!-- paralax 1 -->
+    <script src="js/parallax.js"></script>  <!-- от модного окна -->
+    <script src="js/parallax.min.js"></script>  <!-- от модного окна -->
+    <!-- end paralax 1 -->
+    <!-- плагин jquery ввод телефона -->
+    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+     <!-- end плагин jquery ввод телефона -->
+     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.feedback-slider').slick({
+            infinite: true,  // бесканечная прокрутка
+            slidesToShow: 2, // сколбко слайдеров показываем
+            slidesToScroll: 2,  //   сколько перелистываем    
+            arrows: true,
+            prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
+            nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
+            dots: true, // точки
+            // кол-во отзывов на мониторах
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                }, 
+                 ]
+              });
+            });
+    </script>
+    <script>
+       new WOW().init();
+    </script>
+    <script>
+      //jQuery is required to run this code
+$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
+    </script>
+    <script>
+    var scene = document.getElementById('scene')
+    var parallax = new Parallax(scene)
+    </script>
+     <!-- JQuery -->
+    <!-- JQuery menu -->
+    <script>
+    // document обратились ко всему документу
+    // ready сайт загружен полносьтью
+      $(document).ready(function() {
+        var $nav = $('a.main-nav-bar');
+          $nav.click(function(){
+            $('.overlay-nav').show('slow') // покозать меню при клике
+          })
+          $('.close-nav').click(function(){
+              $('.overlay-nav').hide('slow') // скрывать меню
+          })
+
+      })
+      
+    </script>
+     <!-- end JQuery menu -->
+     <!-- проверка тел -->
+     <script>
+       jQuery(function($){
+           // $("#date").mask("99/99/9999");
+           $("#phone").mask("+7 (999) 999-99-99");
+           // $("#tin").mask("99-9999999");
+           // $("#ssn").mask("999-99-9999");
+});
+     </script>
+     <!-- end проверка тел -->
+    <!-- обработка формы -->
+    <script>
+    $(document).ready(function(){
+
+      $('#submit-form').click(function(){
+
+        if ($('input#userName').val()  !== ''){
+            $('#main-form').submit();
+        } 
+        else {
+          alert('вы не заполнили поля имя');
+        }
+      })
+      })
+    </script>
+    <!-- end обработка формы -->
+    <!-- спасибо модальное окно -->
+    <script>
+      $(document).ready(function(){
+        $('#submit-form').click(function(){
+          if($('input#userName').val() !== ''){
+                $('span#nameUser').text($('input#userName').val());
+                $('#modal-3').modal('show');
+          }
+        })
+      })
+    </script>
+     <!-- end  спасибо модальное окно -->
+    <!-- end JQuery -->
+  </body>
+</html>
